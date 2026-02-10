@@ -1,0 +1,44 @@
+<template>
+  <div :class="$style.vueGridRow">
+    <slot />
+  </div>
+</template>
+
+<script lang="ts">
+export default {
+  name: 'VueGridRow',
+};
+</script>
+
+<style lang="scss" module>
+@import '@/app/shared/design-system';
+
+.vueGridRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 ($screen-phone-gutter * -0.5);
+  margin-bottom: 3rem;
+  background-color: #000;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include mediaMin(tabletPortrait) {
+    margin: 0 ($screen-tablet-portrait-gutter * -0.25);
+  }
+
+  @include mediaMin(tabletLandscape) {
+    margin: 0 ($screen-tablet-landscape-gutter * -0.25);
+  }
+
+  @include mediaMin(smallDesktop) {
+    margin: 0 ($screen-small-desktop-gutter * -0.25);
+  }
+
+  @include mediaMin(largeDesktop) {
+    margin: 0 ($screen-large-desktop-gutter * -0.25);
+  }
+}
+</style>

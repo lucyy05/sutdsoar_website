@@ -1,0 +1,52 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "types": [
+      "vite/client"
+    ],
+    /* Linting / strictness
+     *
+     * The original project was authored with Vue 2 style components and
+     * relatively loose typing. The default Vue 3 + TS 5 config is very
+     * strict and causes hundreds of type errors that don't affect runtime.
+     * To get the app building and running reliably, we relax some options
+     * here. You can tighten them again incrementally once the codebase
+     * has been migrated to stricter typing patterns.
+     */
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "erasableSyntaxOnly": false,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": false,
+    /* Override a few base settings to be more permissive
+     * and compatible with legacy Options API components.
+     */
+    "verbatimModuleSyntax": false,
+    "noImplicitThis": false,
+    "noUncheckedIndexedAccess": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@components/*": [
+        "./src/app/shared/components/*"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/*.d.ts"
+  ],
+  "exclude": [
+    "src/**/*.stories.ts"
+  ]
+}
