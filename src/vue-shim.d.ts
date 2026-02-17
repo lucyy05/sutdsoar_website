@@ -1,3 +1,6 @@
+import { Store } from 'vuex';
+import { Router, RouteLocationNormalized } from 'vue-router';
+
 declare module '*.vue' {
     import type { DefineComponent } from 'vue';
     const component: DefineComponent<{}, {}, any>;

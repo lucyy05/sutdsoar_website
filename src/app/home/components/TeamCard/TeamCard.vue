@@ -107,7 +107,7 @@ export default defineComponent({
       opacity: 1;
     }
     .cover {
-      transform: translateY(calc(100% - 6rem));
+      transform: translateY(calc(100% - 4.5rem));
     }
   }
 }

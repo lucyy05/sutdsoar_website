@@ -47,7 +47,7 @@ export default defineComponent({
   $border-radius: 0.2rem;
   /* Slightly taller card so long descriptions fit without scroll */
   $height: 28rem;
-  $width: 32rem;
+  $max-width: 32rem;
   $transition: cubic-bezier(0.17, 0.67, 0.5, 1.03);
   $timing: 0.4s 0.15s;
 
@@ -55,7 +55,9 @@ export default defineComponent({
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  width: $width;
+  /* Use max-width instead of fixed width for responsiveness */
+  max-width: $max-width;
+  width: 100%;
   height: $height;
   border-radius: $border-radius;
   overflow: hidden;
@@ -67,10 +69,11 @@ export default defineComponent({
     width: 100%;
     height: 100%;
     background-color: $main-color;
-    transform: translateX($width);
+    /* Use 100% instead of fixed width so it works at any card size */
+    transform: translateX(100%);
     transition: $timing $transition;
 
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     -webkit-flex-align: center;
@@ -96,7 +99,7 @@ export default defineComponent({
       /* Keep the body copy neatly aligned within the card cover */
       text-align: center;
       width: 100%;
-      max-width: 80%;
+      max-width: 90%;
       box-sizing: border-box;
       font-size: 0.85rem;
       line-height: 1.3rem;

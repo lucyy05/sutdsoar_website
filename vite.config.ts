@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/sutdsoar_website/', // GitHub repository name
   plugins: [vue()],
   resolve: {
     alias: {

@@ -518,6 +518,15 @@ a {
   margin: 0 auto;
 }
 
+/* Medium screens: 2 cards per row */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .centeritem {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Large screens: 3 cards per row */
 @media (min-width: 1024px) {
   .centeritem {
     flex: 0 0 33.3333%;
