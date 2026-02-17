@@ -64,7 +64,7 @@ The output files will be in the `dist/` directory, ready for deployment.
 ## 🎨 Features
 
 *   **Responsive Design:** Optimized for Desktop, Tablet, and Mobile devices.
-*   **Interactive Animations:** Custom particle effects in the Hero section.
+*   **Interactive Animations:** Custom particle effects at the start of page.
 *   **Dynamic Sections:** Modular components for showcasing Projects and Events.
 
 ## 🤝 Contributing

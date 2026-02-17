@@ -246,7 +246,7 @@
       <vue-headline level="3" id="contact">Join Us!</vue-headline>
       <br />
       <div :class="$style.socialIcons">
-        <a :class="$style.social" href="mailto:soar@club.sutd.edu.sg" target="_blank" rel="noopener">
+        <a :class="$style.social" href="mailto:soar@club.sutd.edu.sg">
           <vue-icon-email />
         </a>
         <a :class="$style.social" href="https://github.com/sutd-robotics" target="_blank" rel="noopener">
