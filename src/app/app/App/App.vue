@@ -25,12 +25,13 @@
 </template>
 
 <script lang="ts">
+import { defineComponent } from 'vue';
 import VueNavBar from '@components/VueNavBar/VueNavBar.vue';
 
-export default {
+export default defineComponent({
   name: 'App',
   components: { VueNavBar },
-};
+});
 </script>
 
 <style>

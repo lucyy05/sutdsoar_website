@@ -12,11 +12,11 @@ export const AppRoutes: RouteRecordRaw[] = [
     },
 
     // example redirect
-    // TODO: remove from production code
-    {
+    // Note: remove from production code
+    /*{
         path: '/redirect',
         redirect: '/',
-    },
+    },*/
 
     // catch-all route
     // shows 404 page and also makes server respond with HTTP status code 404
